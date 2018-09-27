@@ -1,3 +1,11 @@
 #headshot {
     width: 40%;
 }
+
+#resume{
+    height: 1150px;
+}
+
+.projectimage{
+    width: 60%;
+}
