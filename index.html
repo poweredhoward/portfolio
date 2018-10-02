@@ -19,17 +19,37 @@
 </head>
 <body>
     
-    <nav id="nav" class="sticky-top">
-        <ul class="nav py-1">
-            <li class="nav-item" id="li-about"><a class="nav-link" href="index.html">About Me</a></li>
-            <li class="nav-item" id="li-projects"><a class="nav-link" href="projects.html">Projects</a></li>
-            <li class="nav-item" id="li-contact"><a class="nav-link" href="contact.html">Contact</a></li>
-           <li class="nav-item" id="li-employers"> <a class="nav-link" href="employers.html">Recruiters/Employers</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="assets/images/menu.png" id="menu">
+                </span>
+            </button>        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" >
+                <li class="nav-item mx-4 active" id="li-about"><a class="nav-link" href="index.html">About Me</a></li>
+                <li class="nav-item mx-4" id="li-skills"><a class="nav-link" href="skills.html">Skills</a></li>
+                <li class="nav-item mx-4" id="li-projects"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item mx-4" id="li-contact"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mx-4" id="li-employers"> <a class="nav-link" href="employers.html">Recruiters/Employers</a></li>
+            </ul>
+        </div>
     </nav>
+
+    
     <div class="jumbotron">
-        <h1>Matthew Howard</h1>
-        <h2>Full Stack Software Developer</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h1 style="line-height: 250%;">Matthew Howard</h1>
+                    <h2>Full Stack Software Developer</h2>
+                </div>
+                <div class="col-md">
+                    <img class="rounded mx-auto d-block" alt="me" id="headshot" src="assets/images/headshot.JPG"/>
+                </div>
+                
+            </div>
+        </div>
     </div>
     
 
@@ -37,49 +57,19 @@
 
     
     
-    <div id="about">
-        <h3>About Me</h3>
-
-        <img class="rounded mx-auto d-block" alt="me" id="headshot" src="assets/images/headshot.JPG"/>
+    <div id="about">       
 
         <div>
             <h4>"Tell me about yourself"</h4>
-            <p></p>
+            <p>
+                    I am a passionate full stack web developer with a varied background and proven ability to thrive in any environment. My capacity to learn brand new technologies and concepts on the fly and integrate them with previously acquired skills would be valuable to any team. I work very well with others and am always looking for ways to make myself better, whether that be as a developer or a person. 
+            </p>
         </div>
 
-        <div>
-            <h4>Skills</h4>
-            <ul class="list-group">
-                    <li class="list-group-item"><img class="logo" src="assets/images/javascript.png"> Javascript</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/html.png"> HTML5</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/css.svg"> CSS3</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/bootstrap.png"> Bootstrap</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/jquery.png"> jQuery</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/react.png"> React.js</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/node.png"> Node.js</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/express.png"> Express</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/mongo.png"> MongoDB and Mongoose</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/mysql.png"> MySQL and Sequelize</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/python.jpg"> Python</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/flask.png"> Flask</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/java.png"> Java</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/rest.png"> REST</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/api.png"> Building/Consuming APIs</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/aws.png"> AWS</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/git.png"> Git</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/linux.jpg"> Linux</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/datastructures.png"> Data Structures</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/algorithm.png"> Algorithms</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/rdbms.jpg"> Relational DB Management</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/wordpress.png"> Wordpress</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/kubernetes.png"> Kubernetes</li>
-                    <li class="list-group-item"><img class="logo" src="assets/images/docker.jpg"> Docker</li>
-            </ul>
-        </div>
 
         <div>
             <h4>Experience</h4>
-            <div class="card">
+            <div class="card experience">
                 <div class="card-header">
                     <b>Software Engineer</b> - NASA's Jet Propulsion Laboratory
                 </div>
@@ -98,7 +88,7 @@
 
         <br>
 
-        <div class="card">
+        <div class="card  experience">
             <div class="card-header">
                 <b>Tutor</b> - Santa Monica College
             </div>
@@ -117,7 +107,7 @@
 
         <br>
 
-        <div class="card">
+        <div class="card experience">
             <div class="card-header">
                 <b>Entry Level Site Reliability Engineer</b> - Watchtower World Headquarters 
             </div>
@@ -135,7 +125,7 @@
 
         <br>
 
-        <div class="card">
+        <div class="card experience">
             <div class="card-header">
                 <b>Freelance Web Developer</b>
             </div>
@@ -155,17 +145,17 @@
         <div>
             <h4>Education</h4>
 
-            <div class="card">
+            <div class="card experience">
                 <div class="card-header">
                     <b>UCLA Extension Full Stack Web Development Bootcamp</b>
                 </div>
 
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
-                        <li class="list-item">Made me a highly skilled developmer in the MERN Stack</li>
-                        <li class="list-item">Team Lead for Three Full Stack Web Application Projects</li>
-                        <li class="list-item">Also very comfortable with MySql, jQuery, Bootstrap</li>
-                        <li class="list-item">Hired on as a Teaching Assistant after the class</li>
+                        <li class="list-group-item">Made me a highly skilled developmer in the MERN Stack</li>
+                        <li class="list-group-item">Team Lead for Three Full Stack Web Application Projects</li>
+                        <li class="list-group-item">Also very comfortable with MySql, jQuery, Bootstrap</li>
+                        <li class="list-group-item">Hired on as a Teaching Assistant after the class</li>
                     </ul>
                 </div>
                 <div class="card-footer">
@@ -175,23 +165,23 @@
 
             <br>
 
-            <div class="card">
+            <div class="card experience">
                 <div class="card-header">
                     <b>Santa Monica College</b> - AA in Computer Programming
                 </div>
 
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
-                        <li class="list-item">3.9 GPA overall,4.0 major GPA</li>
-                        <li class="list-item">
+                        <li class="list-group-item">3.9 GPA overall,4.0 major GPA</li>
+                        <li class="list-group-item">
                             Officer and Social Media Director of SMC STEM Club  (September 2015 – June 2016)
                             <ul>
                                 <li class="list-item">Planned and led meetings of up to 50 people, coordinated social events and guest speakers</li>
                                 <li class="list-item">Built our website from scratch. Collaborated with school faculty to compile a list of helpful links for STEM majors</li>
                             </ul>
                         </li>
-                        <li class="list-item">Recipient of 5 merit based scholarships, including excellence in STEM, Computer Science, and community service</li>
-                        <li class="list-item">Only student invited to participate in annual CS Advisory Board meeting. Discussed better serving the local CS community and offered suggestions from a student’s perspective that ended up being implemented</li>
+                        <li class="list-group-item">Recipient of 5 merit based scholarships, including excellence in STEM, Computer Science, and community service</li>
+                        <li class="list-group-item">Only student invited to participate in annual CS Advisory Board meeting. Discussed better serving the local CS community and offered suggestions from a student’s perspective that ended up being implemented</li>
                     </ul>
                 </div>
                 <div class="card-footer">
@@ -209,6 +199,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="assets/javascript/pdfobject.js"></script>
-    <script>PDFObject.embed("assets/ResumeMatthewHoward.pdf", "#resume");</script>
+   
 </body>
 </html>

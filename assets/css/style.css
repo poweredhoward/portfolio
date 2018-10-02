@@ -1,9 +1,14 @@
 #headshot {
-    width: 40%;
+    width: 55%;
+    border: blue solid 1px;
 }
 
 #resume{
     height: 1150px;
+}
+
+#about{
+    margin: 4px;
 }
 
 .projectimage{
@@ -13,3 +18,34 @@
 .logo{
     width: 35px;
 }
+
+.nav-item{
+    font-size: 150%;
+    font-weight: bolder; 
+}
+
+#nav{
+    background-color: rgba(179, 172, 172, 0.9);
+    border-bottom: black 1px solid;
+}
+
+.experience{
+    margin: 4px 17px;
+}
+
+#menu{
+    height: 100%;
+}
+
+
+
+/* 
+@media only screen and (max-width: 700px) {
+    #nav{
+        display: none;
+    }
+
+    #horizontal-menu{
+        display: block;
+    }
+} */

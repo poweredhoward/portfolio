@@ -21,13 +21,21 @@
 
     <!-- <a href="#nav"><button>Enter Site</button></a> -->
 
-    <nav id="nav" class="sticky-top">
-        <ul class="nav">
-            <li class="nav-item" id="li-about"><a class="nav-link" href="index.html">About Me</a></li>
-            <li class="nav-item" id="li-projects"><a class="nav-link" href="projects.html">Projects</a></li>
-            <li class="nav-item" id="li-contact"><a class="nav-link" href="contact.html">Contact</a></li>
-           <li class="nav-item" id="li-employers"> <a class="nav-link" href="employers.html">Recruiters/Employers</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="assets/images/menu.png" id="menu">
+                </span>
+            </button>        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" >
+                <li class="nav-item mx-4 active" id="li-about"><a class="nav-link" href="index.html">About Me</a></li>
+                <li class="nav-item mx-4" id="li-skills"><a class="nav-link" href="skills.html">Skills</a></li>
+                <li class="nav-item mx-4" id="li-projects"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item mx-4" id="li-contact"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mx-4" id="li-employers"> <a class="nav-link" href="employers.html">Recruiters/Employers</a></li>
+            </ul>
+        </div>
     </nav>
     
    
@@ -36,22 +44,22 @@
     <div id="projects" class="container">
         <h3>Projects</h3>
         <div>
-            <h3><a href="https://rift-classroom.herokuapp.com/classroom">Rift - a portal connecting students and teachers</a></h3>
+            <h3><a href="https://rift-classroom.herokuapp.com/classroom" target="_blank">Rift - a portal connecting students and teachers</a></h3>
             <img class="projectimage" src="assets/images/rift.JPG">
-            <p><a href="https://github.com/poweredhoward/rift">See the repo</a></p>
+            <p><a href="https://github.com/poweredhoward/rift" target="_blank">See the repo</a></p>
         </div>
 
         <div>
-            <h3><a href="https://poweredhoward.github.io/yelp-help/">Yelp Help - Extending the functionality of Yelp</a></h3>
+            <h3><a href="https://poweredhoward.github.io/yelp-help/" target="_blank">Yelp Help - Extending the functionality of Yelp</a></h3>
             <img class="projectimage" src="assets/images/yelphelp.JPG">
-            <p><a href="https://github.com/poweredhoward/yelp-help">See the repo</a></p>
+            <p><a href="https://github.com/poweredhoward/yelp-help" target="_blank">See the repo</a></p>
 
         </div>
 
         <div>
-            <h3><a href="https://group-activity-planner.herokuapp.com/">The Group Planner - Make plans with your friends</a></h3>
+            <h3><a href="https://group-activity-planner.herokuapp.com/" target="_blank">The Group Planner - Make plans with your friends</a></h3>
             <img class="projectimage" src="assets/images/groupplanner.JPG">
-            <p><a href="https://github.com/poweredhoward/group-planner">See the repo</a></p>
+            <p><a href="https://github.com/poweredhoward/group-planner" target="_blank">See the repo</a></p>
 
         </div>
     </div>
@@ -66,6 +74,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="assets/javascript/pdfobject.js"></script>
-    <script>PDFObject.embed("assets/ResumeMatthewHoward.pdf", "#resume");</script>
+    
 </body>
 </html>
